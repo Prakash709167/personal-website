@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.acknowledge-section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.acknowledge-section h1{
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 50px;
+}
+.container-section{
+    width: 1170px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+   
+}
+.acknowledge-item{
+    flex-basis: 23%;
+    margin: 10px 0px ;
+    text-align: center;
+    padding: 20px 0px;
+    background: white;
+    box-shadow: 0px 0px 10px 3px rgb(123, 122, 122);
+    border-radius: 20px;
+}
+.acknowledge-item img{
+    width: 100px;
+    height: 100px;
+}
+.acknowledge-item h3{
+    padding: 10px 0px;
+    font-size: 30px;
+}
+.acknowledge-item p{
+    font-size: 18px;
+    padding: 10px;
+}
+.acknowledge-item button{
+    background: blue;
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.acknowledge-item:hover{
+    background: darkgray;
+}
+.acknowledge-item:hover h3,.acknowledge-item:hover p{
+    color: white;
+}
+.acknowledge-item button:hover{
+    background: white;
+    color: darkgray;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .container-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .acknowledge-item{
+        margin: 10px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .container-section{
+        width: 100%;
+    }
+}
